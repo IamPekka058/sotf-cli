@@ -47,3 +47,4 @@ app.*.map.json
 node_modules/
 cache/
 dist/
+/bin/sotf_cli.exe

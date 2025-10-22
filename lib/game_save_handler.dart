@@ -1,8 +1,9 @@
 import 'dart:io';
 
+import 'package:sotf_cli/src/models/game_save.dart';
+
 import 'file_handler.dart';
 import 'platform_handler.dart';
-import 'type/game_save.dart';
 
 class GameSaveHandler {
   final FileHandler _fileHandler;
