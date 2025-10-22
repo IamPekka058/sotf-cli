@@ -1,10 +1,9 @@
 import 'dart:io';
 
 import 'package:args/args.dart';
-
-import 'file_handler.dart';
-import 'game_save_handler.dart';
-import 'platform_handler.dart';
+import 'package:sotf_cli/file_handler.dart';
+import 'package:sotf_cli/game_save_handler.dart';
+import 'package:sotf_cli/platform_handler.dart';
 
 const String version = '0.0.1';
 
