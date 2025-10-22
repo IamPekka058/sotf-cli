@@ -1,0 +1,29 @@
+name: Format, Lint and Test
+
+on:
+  pull_request:
+    types: [ opened, labeled, synchronize ]
+
+jobs:
+  test:
+    name: Format, analyze and test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout app repository
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5
+
+      - name: Set up Dart
+        uses: dart-lang/setup-dart@v1
+        with:
+          sdk: stable
+          cache: true
+
+      - name: Install dependencies
+        run: dart pub get
+
+      - name: Check dart format
+        run: dart format --set-exit-if-changed .
+
+      - name: Analyze flutter
+        run: dart analyze

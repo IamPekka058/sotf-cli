@@ -1,0 +1,14 @@
+name: sotf_cli
+description: A small command-line tool to help you inspect and edit "Sons of the Forest" game saves on Windows.
+version: 0.0.1
+repository: https://github.com/IamPekka058/sotf-cli
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  args: ^2.7.0
+
+dev_dependencies:
+  lints: ^6.0.0
+  test: ^1.25.6
