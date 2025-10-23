@@ -1,7 +1,7 @@
 import 'dart:io';
 
 import 'package:args/command_runner.dart';
-import 'package:sotf_cli/game_save_handler.dart';
+import 'package:sotf_cli/src/handlers/game_save_handler.dart';
 
 class ListCommand extends Command<void> {
   final GameSaveHandler gameSaveHandler;
