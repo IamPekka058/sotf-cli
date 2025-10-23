@@ -62,7 +62,7 @@ class GameSaveHandler {
     final originalContent = utf8.decode(originalBytes);
 
     // Parse, update and rebuild
-    final gsSave = GameStateSave.parse(originalContent);
+    final gsSave = GameStateHandler.parse(originalContent);
     final gameState = GameState.fromJson(gsSave.gameStateMap);
     gameState.gameDays = days;
 
